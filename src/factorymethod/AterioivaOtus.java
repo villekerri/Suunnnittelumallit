@@ -3,8 +3,10 @@ package factorymethod;
 public abstract class AterioivaOtus {
 
     Juoma juoma = null;
+    Ruoka ruoka = null;
 
     public abstract Juoma createJuoma();
+    public abstract Ruoka createRuoka();
 
 
     public void aterioi(){
@@ -13,13 +15,15 @@ public abstract class AterioivaOtus {
     }
 
     public void syö(){
-        System.out.println("Kylläpä ruoka maistuukin hyvältä");
+    	if (ruoka == null)
+            ruoka = createRuoka();
+        System.out.println("Kylläpä " + ruoka + " maistuukin hyvältä.");
     }
 
 
     public void juo(){
         if (juoma == null)
             juoma = createJuoma();
-        System.out.println("Aterian jälkeen " + juoma + " tekee terää");
+        System.out.println("Aterian jälkeen " + juoma + " tekee terää.");
     }
 }

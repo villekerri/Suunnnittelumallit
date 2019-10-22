@@ -6,4 +6,8 @@ public class Opettaja extends AterioivaOtus {
         return new Vesi();
     };
 
+    public Ruoka createRuoka() {
+    	return new Keitto();
+    }
+    
 }

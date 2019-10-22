@@ -1,8 +1,9 @@
 package factorymethod;
 
-public class Vesi implements Juoma{
+public class Leipa implements Ruoka {
 	@Override
     public String toString(){
-        return "vesi";
+        return "leipä";
     }
+	
 }
