@@ -1,4 +1,4 @@
-package AbstractFactory;
+package abstractfactory;
 
 public interface Tehdas {
 	public abstract Lippis createLippis();

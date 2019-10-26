@@ -1,4 +1,4 @@
-package AbstractFactory;
+package abstractfactory;
 
 public abstract class Kengat implements Tuote {
 

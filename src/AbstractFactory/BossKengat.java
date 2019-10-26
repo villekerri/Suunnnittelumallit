@@ -1,4 +1,4 @@
-package AbstractFactory;
+package abstractfactory;
 
 public class BossKengat extends Kengat {
 	public String toString() {

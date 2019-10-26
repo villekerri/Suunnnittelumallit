@@ -1,4 +1,4 @@
-package AbstractFactory;
+package abstractfactory;
 
 public class AdidasLippis extends Lippis {
 	public String toString() {
